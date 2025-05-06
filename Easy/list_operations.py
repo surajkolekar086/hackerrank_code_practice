@@ -3,7 +3,10 @@ if __name__ == '__main__':
     new_list = []
 
     for _ in range(N):
-        command = input().split()
+        command = input().split() #insert 0 5
+        print(type(command)) #<class 'list'>
+        print(f"{command=}") #['insert', '0', '5']
+
 
         if command[0] == "insert":
             new_list.insert(int(command[1]), int(command[2]))
