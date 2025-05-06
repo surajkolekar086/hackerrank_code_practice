@@ -12,7 +12,7 @@ The score for the whole list of words is the sum of scores of all words in the l
 Debug the given function score_words such that it returns a correct score.
 
 Your function will be tested on several cases by the locked template code.
-
+not
 """
 
 """
