@@ -20,6 +20,7 @@ Key Observations:
 
     Otherwise, Stuart gets those points.
 """
+
 def minion_game(s):
     s = s.upper()
     vowels = 'AEIOU'
@@ -28,14 +29,14 @@ def minion_game(s):
     str_len = len(s)
 
     for i in range(str_len):
-        print(i)
         if s[i] in vowels:
-            print(s[i])
-            kevin_score += str_len - i
+            #Substrings can overlap, and the number of substrings starting at index i is (len(string) - i).
+            kevin_score += str_len - i 
+
         else:
-            print(s[i])
+            #Substrings can overlap, and the number of substrings starting at index i is (len(string) - i).
             stuart_score += str_len - i
-        
+
     if kevin_score > stuart_score:
         print("kevin: ", kevin_score)
     elif kevin_score < stuart_score:
